@@ -1,6 +1,6 @@
 module.exports = {
-  title: `zoomkoding.com`,
-  description: `줌코딩의 개발일기`,
+  title: `Hoo`,
+  description: `Dev Hoo`,
   language: `ko`, // `ko`, `en` => currently support versions for Korean and English
   siteUrl: `https://www.zoomkoding.com`,
   ogImage: `/og-image.png`, // Path to your in the 'static' folder
@@ -11,16 +11,16 @@ module.exports = {
   },
   ga: '0', // Google Analytics Tracking ID
   author: {
-    name: `정진혁`,
+    name: `임성후`,
     bio: {
       role: `개발자`,
-      description: ['사람에 가치를 두는', '능동적으로 일하는', '이로운 것을 만드는'],
+      description: ['POWER BLOGER', '좋은 코드를 만드는'],
       thumbnail: 'sample.png', // Path to the image in the 'asset' folder
     },
     social: {
-      github: ``, // `https://github.com/zoomKoding`,
-      linkedIn: ``, // `https://www.linkedin.com/in/jinhyeok-jeong-800871192`,
-      email: ``, // `zoomkoding@gmail.com`,
+      github: `https://github.com/hugehoo`, // `https://github.com/hugehoo`,
+      linkedIn: `https://www.linkedin.com/in/%EC%84%B1%ED%9B%84-%EC%9E%84-7a2238195/`, // `https://www.linkedin.com/in/%EC%84%B1%ED%9B%84-%EC%9E%84-7a2238195/`,
+      email: `tbnsok40@gmail.com`, // `zoomkoding@gmail.com`,
     },
   },
 
@@ -43,8 +43,44 @@ module.exports = {
       // ========================================================
       // ========================================================
       {
-        date: '2021.02 ~',
-        activity: '개인 블로그 개발 및 운영',
+        date: '2022.01 ~',
+        activity: 'f-lab portfolio',
+        links: {
+          post: '/gatsby-starter-zoomkoding-introduction',
+          github: 'https://github.com/zoomkoding/zoomkoding-gatsby-blog',
+          demo: 'https://www.zoomkoding.com',
+        },
+      },
+      {
+        date: '2021.08 ~ 2021.10',
+        activity: '슬기로운 의사생활 심리테스트 개발',
+        links: {
+          post: '/gatsby-starter-zoomkoding-introduction',
+          github: 'https://github.com/zoomkoding/zoomkoding-gatsby-blog',
+          demo: 'https://www.zoomkoding.com',
+        },
+      },
+      {
+        date: '2020.11 ~ ',
+        activity: '더존 비즈온 서버 개발자',
+        links: {
+          post: '/gatsby-starter-zoomkoding-introduction',
+          github: 'https://github.com/zoomkoding/zoomkoding-gatsby-blog',
+          demo: 'https://www.zoomkoding.com',
+        },
+      },
+      {
+        date: '2020.06 ~ 2020.09',
+        activity: '멋쟁이사자처럼 직장인 보조강사',
+        links: {
+          post: '/gatsby-starter-zoomkoding-introduction',
+          github: 'https://github.com/zoomkoding/zoomkoding-gatsby-blog',
+          demo: 'https://www.zoomkoding.com',
+        },
+      },
+      {
+        date: '2020.03 ~ 2020.10',
+        activity: '멋쟁이사자처럼 부산대 8기',
         links: {
           post: '/gatsby-starter-zoomkoding-introduction',
           github: 'https://github.com/zoomkoding/zoomkoding-gatsby-blog',

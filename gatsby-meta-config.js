@@ -95,7 +95,7 @@ module.exports = {
       {
         title: '',
         description: '',
-        techStack: ['', ''],
+        techStack: ['Java', 'Spring', 'Spring boot', 'Javascript', 'React', 'Python'],
         thumbnailUrl: '',
         links: {
           post: '',

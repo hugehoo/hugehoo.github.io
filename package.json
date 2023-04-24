@@ -38,7 +38,11 @@
     "sass": "^1.43.4",
     "typeface-montserrat": "^1.1.13"
   },
+  "resolutions": {
+    "source-map": "^0.8.0-beta.0"
+  },
   "devDependencies": {
+    "source-map": "^0.8.0-beta.0",
     "gh-pages": "^3.2.3",
     "prettier": "2.2.1"
   },

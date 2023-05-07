@@ -49,7 +49,7 @@ module.exports = {
       },
       {
         date: "2020.11 ~ 2022.03",
-        activity: "(주) 더존비즈온 개발자",
+        activity: "(주) 더존비즈온 | Software Engineer",
         links: {}
       },
       {
@@ -81,12 +81,12 @@ module.exports = {
         title: "Tidify",
         date: "2023.02 ~ ",
         description:
-          "개발 블로그를 운영하는 기간이 조금씩 늘어나고 점점 많은 생각과 경험이 블로그에 쌓아가면서 제 이야기를 담고 있는 블로그를 직접 만들어보고 싶게 되었습니다. 그동안 여러 개발 블로그를 보면서 좋았던 부분과 불편했던 부분들을 바탕으로 레퍼런스를 참고하여 직접 블로그 테마를 만들게 되었습니다.",
+          "iOS 공유하기 버튼 (Share extension) 기반, 개인용 북마크 아카이빙 서비스의 서버 개발을 전담했습니다.",
         techStack: ["Springboot", "Java", "Mysql", "Jpa"],
-        thumbnailUrl: "icon.png",
+        thumbnailUrl: "tidify.png",
         links: {
           // post: '/gatsby-starter-zoomkoding-introduction',
-          github: "https://github.com/hugehoo/Hospital-Playlist-back",
+          github: "https://github.com/hugehoo/tidify-be",
           demo: "https://friendly-shannon-fbae91.netlify.app/"
         }
       },
@@ -94,22 +94,22 @@ module.exports = {
         title: "Zep.Sight",
         date: "2022.08",
         description:
-          "개발 블로그를 운영하는 기간이 조금씩 늘어나고 점점 많은 생각과 경험이 블로그에 쌓아가면서 제 이야기를 담고 있는 블로그를 직접 만들어보고 싶게 되었습니다. 그동안 여러 개발 블로그를 보면서 좋았던 부분과 불편했던 부분들을 바탕으로 레퍼런스를 참고하여 직접 블로그 테마를 만들게 되었습니다.",
+          "[정션 아시아 2022 해커톤] 프로젝트로 메타버스 플랫폼 ZEP 트랙에 참여해 우승했습니다. 메타버스 공간(ZEP) Analytics 시각화 서비스를 개발했습니다.",
         techStack: ["Springboot", "Java", "Mysql", "Jpa"],
-        thumbnailUrl: "blog.png",
+        thumbnailUrl: "zepsight.png",
         links: {
-          // post: '/gatsby-starter-zoomkoding-introduction',
-          github: "https://github.com/hugehoo/Hospital-Playlist-back",
-          demo: "https://friendly-shannon-fbae91.netlify.app/"
+          post: 'https://blog.naver.com/tbnsok40/222855572260',
+          github: "https://github.com/ZEP-SIGHT/junction-back",
+          // demo: "https://friendly-shannon-fbae91.netlify.app/"
         }
       },
       {
         title: "슬기로운 의사생활 심리테스트",
         date: "2021.08 ~ 2021.10",
         description:
-          "개발 블로그를 운영하는 기간이 조금씩 늘어나고 점점 많은 생각과 경험이 블로그에 쌓아가면서 제 이야기를 담고 있는 블로그를 직접 만들어보고 싶게 되었습니다. 그동안 여러 개발 블로그를 보면서 좋았던 부분과 불편했던 부분들을 바탕으로 레퍼런스를 참고하여 직접 블로그 테마를 만들게 되었습니다.",
+          "드라마 '슬기로운 의사생활'을 소재로 개발한 심리테스트입니다. 프로젝트의 처음과 끝을 책임지며 웹 API 설계 및 Frontend/Backend 개발, 배포 했습니다.",
         techStack: ["Javascript", "Typescript", "React", "NestJs"],
-        thumbnailUrl: "blog.png",
+        thumbnailUrl: "hospital.png",
         links: {
           // post: '/gatsby-starter-zoomkoding-introduction',
           github: "https://github.com/hugehoo/Hospital-Playlist-back",

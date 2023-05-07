@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-category-template-js",
+    "path": "/posts/글또",
+    "result": {"pageContext":{"currentCategory":"글또","categories":["All","Architecture","springboot","글또","Spring"],"edges":[{"node":{"id":"618bb7aa-9cb3-51d5-922b-e3764e890587","excerpt":"처음 글또를 시작했던 2021년 7월의 글 6기, 7기를 거쳐 8기에 참여하게 됐다. 내가 애정하는 커뮤니티가 점점 커지는 모습을 보니 뿌듯하다. 기여한 건 별로 없지만 ㅎ.. 글또 8기 다짐 8기 회고 글 제출 6기의 다짐글을 다시 읽으니, 2년 전의 나는 어떤 주제에 관심을 가졌고, 무슨 목표가 있었는지 되돌아볼 수 있었다. 이런 류의 기록이 많이 남지 않아 아쉬웠다. 회고를 패스로 대체한 것도 살짝 후회했다. 한 기수의 마무리와 소회를 글로 남겨둘 수 있는 건 큰 행운이다. 기억은 휘발되고 왜곡될 수 있지만, 기록은 그 자체로 남는다, Immutable U know. No Pass 7기 때 벌금(?)을 내진 않았지만 패스는 2회 모두 사용했다. 이번 기수는 No Pass 가 목표다. 쓸 주제는 차고 넘치는데, 뭘 써야 할지 모르겠다는 핑계를 대지 않았으면 한다. 긴장하라 미래의 나 영양가 있는 글 제출 추상적인 다짐이지만 내가 생각하는 영양가 있는 글은 ‘문제 해결 과정과 결…","fields":{"slug":"/글또 8기 다짐/"},"frontmatter":{"categories":"글또","title":"글또 8기 다짐","date":"February 06, 2023"}},"next":{"fields":{"slug":"/@Cacheable: 메서드 내부 호출 개선/"}},"previous":{"fields":{"slug":"/Springboot 원리/"}}}]}},
+    "staticQueryHashes": ["1073350324","1956554647","2938748437"]}

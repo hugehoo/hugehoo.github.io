@@ -104,7 +104,7 @@
 이론적으로는 각 서비스 컴포넌트를 독립적으로 확장할 수 있었지만, 일부 컴포넌트의 사용 방법으로 인해 예상 부하의 5% 정도 규모에서 한계에 부딪혔습니다.
 또한 모든 컴포넌트의의 전체 비용이 너무 높아 대규모 솔루션으로 적용하기엔 무리였습니다.</p>
 <p>아래 다이어그램은 프라임의 서버리스 아키텍처입니다. <br/></p>
-<p><em>📌 Defect Detection 시스템의 초기 아키텍처</em>
+<p><strong>📌 Defect Detection 시스템의 초기 아키텍처</strong>
 <span
       class="gatsby-resp-image-wrapper"
       style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 720px; "
@@ -146,7 +146,7 @@
 이로써 데이터 전송이 메모리 내에서 처리되므로 비디오 프레임의 중간 저장소인 S3 버킷이 불필요했습니다.
 또한 단일 인스턴스 내에서 컴포넌트를 제어하는 형태로 오케스트레이션을 구현했습니다.
 아래의 다이어그램은 모놀리스 애플리케이션으로 마이그레이션 된 시스템 아키텍처 입니다. <br/></p>
-<p><em>📌 모든 컴포넌트가 단일 ECS 내에서 실행되는 시스템으로 업데이트된 아키텍처</em>
+<p><strong>📌 모든 컴포넌트가 단일 ECS 내에서 실행되는 시스템으로 업데이트된 아키텍처</strong>
 <span
       class="gatsby-resp-image-wrapper"
       style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 720px; "
@@ -181,7 +181,7 @@
 이 문제를 해결하기 위해 각 복제본을 다른 하위 집합의 Detector로 매개변수화 하여 서비스를 여러 번 복제했습니다.
 또한 고객 요청을 분산하기 위해 경량 오케스트레이션 레이어를 구현했습니다.</p>
 <p>아래 다이어그램은 단일 인스턴스의 용량이 초과될 때 탐지기를 배포하는 솔루션입니다. <br/></p>
-<p><em>📌 새로운 Detector를 배포할 때 접근방식</em>
+<p><strong>📌 새로운 Detector를 배포할 때 접근방식</strong>
 <span
       class="gatsby-resp-image-wrapper"
       style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 720px; "

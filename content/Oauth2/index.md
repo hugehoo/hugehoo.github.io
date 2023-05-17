@@ -7,7 +7,7 @@ tags: 블로그 github-pages gatsby
 categories: Oauth2
 ---
 
-## OAuth 등장배경 (Open Authorization)
+# OAuth 등장배경 (Open Authorization)
 
 초기 트위터 시절, 써드 파티 앱을 사용해 트위터에 글을 올리는 기능이 있었다.
 지금으로선 상상도 하기 힘든 일이지만 당시에는 트위터의 비밀번호를 써드 파티 앱이 그대로 전달받아 트위터 로그인을 진행했다.
@@ -23,12 +23,12 @@ categories: Oauth2
 여러 전문가가 모여 Oauth1.0 스펙을 정의했지만, 2009년 11월 Oauth1.1 을 drop 하고 이전과 완전 다른 2.0 버전에 집중하기로 한다.
 OAuth2.0은 모바일 환경에서도 적용 가능하도록 업데이트하고 기존 1 버전의 혼란스러운 면을 단순화하는 것을 목표로 했다.
 
-## OAuth 란?
+# OAuth 란?
 
 외부서비스의 인증 및 권한 부여를 관리하는 범용 Framework.
 리소스 소유자를 대신해 `구글, 페이스북` 같은 플랫폼의 사용자 데이터에 접근하여 사용자의 접근 권한을 가져올 수 있는 `표준` 프로토콜
 
-## Oauth2.0 용어
+# Oauth2.0 용어
 
 ![img_2.png](img_2.png)
 
@@ -52,7 +52,7 @@ OAuth2.0은 모바일 환경에서도 적용 가능하도록 업데이트하고 
 
 - Oauth2.0 을 관리하는 서버(구글, 카카오)의 자원을 관리하는 서버. 우리가 만드는 써드파티 서버 아님.
 
-## OAuth2.0 사용절차
+# OAuth2.0 사용절차
 
 OAuth2.0 을 사용하기 위해선 Client 를 Resource Server 에 우선 등록해야 한다.
 이 때 `Redirect URI`를 등록하는데, 사용자 인증을 마친 후 (ex, Kakao login) 사용자를 리디렉션 시킬 위치를 의미한다.
@@ -70,7 +70,7 @@ OAuth2.0 을 사용하기 위해선 Client 를 Resource Server 에 우선 등록
 
 <br>
 
-## Oauth2.0 Mechanism
+# Oauth2.0 Mechanism
 
 ![img_5.png](img_5.png)
 
@@ -106,7 +106,7 @@ OAuth2.0 을 사용하기 위해선 Client 를 Resource Server 에 우선 등록
 12. Client 는 Resource Server 로 부터 전달받은 Resource 제공
 
 
-## Authorization Code 가 필요한 이유
+# Authorization Code 가 필요한 이유
 
 Access Token 과 Authorization Code 가 헷갈릴 수 있다.
 Access token 과 Auth Code 모두 Auth server 에서 발급되는데 왜 굳이 두 과정을 나누어 발급하는 것일까?
@@ -123,7 +123,7 @@ Authorization Code 는 Auth Server 를 통해 url 의 쿼리 파라미터로 전
 
 
 
-## OAuth2.0 의 장단점
+# OAuth2.0 의 장단점
 
 **장점**
 

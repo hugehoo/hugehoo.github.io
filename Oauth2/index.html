@@ -85,9 +85,11 @@ but published as an open standard, with common server and client libraries, etc.
 </blockquote>
 <p>여러 전문가가 모여 Oauth1.0 스펙을 정의했지만, 2009년 11월 Oauth1.1 을 drop 하고 이전과 완전 다른 2.0 버전에 집중하기로 한다.
 OAuth2.0은 모바일 환경에서도 적용 가능하도록 업데이트하고 기존 1 버전의 혼란스러운 면을 단순화하는 것을 목표로 했다.</p>
+<br/>
 <h1 id="oauth-란" style="position:relative;"><a href="#oauth-%EB%9E%80" aria-label="oauth 란 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>OAuth 란?</h1>
 <p><strong>외부서비스의 인증 및 권한 부여를 관리하는 범용 Framework.</strong>
 리소스 소유자를 대신해 <code class="language-text">구글, 페이스북</code> 같은 플랫폼의 사용자 데이터에 접근하여 사용자의 접근 권한을 가져올 수 있는 <code class="language-text">표준</code> 프로토콜</p>
+<br/>
 <h1 id="oauth20-용어" style="position:relative;"><a href="#oauth20-%EC%9A%A9%EC%96%B4" aria-label="oauth20 용어 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Oauth2.0 용어</h1>
 <p><span
       class="gatsby-resp-image-wrapper"
@@ -131,6 +133,7 @@ OAuth2.0은 모바일 환경에서도 적용 가능하도록 업데이트하고 
 <ul>
 <li>Oauth2.0 을 관리하는 서버(구글, 카카오)의 자원을 관리하는 서버. 우리가 만드는 써드파티 서버 아님.</li>
 </ul>
+<br/>
 <h1 id="oauth20-사용절차" style="position:relative;"><a href="#oauth20-%EC%82%AC%EC%9A%A9%EC%A0%88%EC%B0%A8" aria-label="oauth20 사용절차 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>OAuth2.0 사용절차</h1>
 <p>OAuth2.0 을 사용하기 위해선 Client 를 Resource Server 에 우선 등록해야 한다.
 이 때 <code class="language-text">Redirect URI</code>를 등록하는데, 사용자 인증을 마친 후 (ex, Kakao login) 사용자를 리디렉션 시킬 위치를 의미한다.</p>
@@ -145,7 +148,7 @@ OAuth2.0은 모바일 환경에서도 적용 가능하도록 업데이트하고 
 <li>등록 과정을 마치면 Client ID, Secret 을 얻을 수 있다. (Secret 은 Optional 일 수 있다.)</li>
 <li>이 둘은 Access Token 을 획득하는데 사용된다.</li>
 </ul>
-<br>
+<br/>
 <h1 id="oauth20-mechanism" style="position:relative;"><a href="#oauth20-mechanism" aria-label="oauth20 mechanism permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Oauth2.0 Mechanism</h1>
 <p><span
       class="gatsby-resp-image-wrapper"
@@ -240,6 +243,7 @@ client 는 authorization server 에 로그인 요청</li>
 <p>Client 는 Resource Server 로 부터 전달받은 Resource 제공</p>
 </li>
 </ol>
+<br/>
 <h1 id="authorization-code-가-필요한-이유" style="position:relative;"><a href="#authorization-code-%EA%B0%80-%ED%95%84%EC%9A%94%ED%95%9C-%EC%9D%B4%EC%9C%A0" aria-label="authorization code 가 필요한 이유 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Authorization Code 가 필요한 이유</h1>
 <p>Access Token 과 Authorization Code 가 헷갈릴 수 있다.
 Access token 과 Auth Code 모두 Auth server 에서 발급되는데 왜 굳이 두 과정을 나누어 발급하는 것일까?</p>
@@ -271,6 +275,26 @@ Access token 과 Auth Code 모두 Auth server 에서 발급되는데 왜 굳이 
 <p><code class="language-text">Authorization Code</code> 는 Auth Server 를 통해 url 의 쿼리 파라미터로 전달된다. (Client Server 를 거치지 않고 곧바로 사용자에게 전달)
 쿼리 파라미터에 담긴 정보는 비교적 노출이 쉽기 때문에 탈취될 위험이 존재하지만, 그렇기 때문에 비교적 보안에 덜 민감한 Auth Code 를 쿼리 파라미터에 담아 전송한다.</p>
 <p>즉 Authorization Code 는 Access Token 을 발급받기 위한 단계적 보안으로 생각할 수 있다.</p>
+<br/>
+<h1 id="oauth20-권한-부여-방식" style="position:relative;"><a href="#oauth20-%EA%B6%8C%ED%95%9C-%EB%B6%80%EC%97%AC-%EB%B0%A9%EC%8B%9D" aria-label="oauth20 권한 부여 방식 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>OAuth2.0 권한 부여 방식</h1>
+<p>OAuth2.0 에서는 다양한 클라이언트 환경에 맞는 네 종류의 권한 부여 방식을 제공합니다. 본 포스팅에서 다룬 방식은 <code class="language-text">권한 부여 승인 코드 방식</code>입니다.</p>
+<h4 id="1-authorization-code-grant--권한-부여-승인-코드-방식" style="position:relative;"><a href="#1-authorization-code-grant--%EA%B6%8C%ED%95%9C-%EB%B6%80%EC%97%AC-%EC%8A%B9%EC%9D%B8-%EC%BD%94%EB%93%9C-%EB%B0%A9%EC%8B%9D" aria-label="1 authorization code grant  권한 부여 승인 코드 방식 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>1. Authorization Code Grant | 권한 부여 승인 코드 방식</h4>
+<ul>
+<li>가장 많이 사용되는 방식으로 Auth Code 를 전달하여 권한 부여 승인을 획득</li>
+</ul>
+<h4 id="2-implicit-grant--권한-부여-승인-코드-방식" style="position:relative;"><a href="#2-implicit-grant--%EA%B6%8C%ED%95%9C-%EB%B6%80%EC%97%AC-%EC%8A%B9%EC%9D%B8-%EC%BD%94%EB%93%9C-%EB%B0%A9%EC%8B%9D" aria-label="2 implicit grant  권한 부여 승인 코드 방식 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2. Implicit Grant | 권한 부여 승인 코드 방식</h4>
+<ul>
+<li>자격증명을 안전하게 저장하기 힘든 클라이언트에게 최적화된 방식</li>
+</ul>
+<h4 id="3-resource-owner-password-credentials-grant" style="position:relative;"><a href="#3-resource-owner-password-credentials-grant" aria-label="3 resource owner password credentials grant permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>3. Resource Owner Password Credentials Grant</h4>
+<ul>
+<li>간단히 Username, Password 로 Access Token 을 얻는 방식</li>
+</ul>
+<h4 id="4-client-credentials-grant" style="position:relative;"><a href="#4-client-credentials-grant" aria-label="4 client credentials grant permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>4. Client Credentials Grant</h4>
+<ul>
+<li>클라이언트 자격증명만으로 Access Token 획득하는 방식</li>
+</ul>
+<br/>
 <h1 id="oauth20-의-장단점" style="position:relative;"><a href="#oauth20-%EC%9D%98-%EC%9E%A5%EB%8B%A8%EC%A0%90" aria-label="oauth20 의 장단점 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>OAuth2.0 의 장단점</h1>
 <p><strong>장점</strong></p>
 <ol>

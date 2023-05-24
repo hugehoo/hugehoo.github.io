@@ -64,247 +64,40 @@
         }
       }
     })
-  </script><title data-react-helmet="true">about OAuth2.0</title><meta data-react-helmet="true" name="viewport" content="initial-scale=1, width=device-width"/><meta data-react-helmet="true" property="og:title" content="about OAuth2.0"/><meta data-react-helmet="true" property="og:site_title" content="about OAuth2.0"/><meta data-react-helmet="true" name="description" content="OAuth 등장배경 (Open Authorization) 초기 트위터 시절, 써드 파티 앱을 사용해 트위터에 글을 올리는 기능이 있었다.
-지금은 상상도 하기 힘든 일이지만, 당시에는 트위터의 비밀번호를 써드 파티 앱이 그대로 전달받아 트위터 로그인을 진행했다.
-트위터 계정의 비밀번호를 써드 파티 앱이 그대로(plain text) 저장하는 등 보안상 허점이 굉장히 많았다. 이런 초기 문제 해결하기 위해 Google의 AuthSub, Yahoo BBAuth 등 다양한 회사에서 유사한 기능을 구현했지만
-표준화 되어 있지 않고, 상호간 호환되지 않는 문제점이 존재했다. 2007년 당시 트위터 치프 아키텍트 Blaine Cook 은 이런 말을 했다. We want something like Flickr Auth / Google AuthSub / Yahoo! BBAuth,
-but published as an open standard, with common server and client li…"/><meta data-react-helmet="true" property="og:description" content="OAuth 등장배경 (Open Authorization) 초기 트위터 시절, 써드 파티 앱을 사용해 트위터에 글을 올리는 기능이 있었다.
-지금은 상상도 하기 힘든 일이지만, 당시에는 트위터의 비밀번호를 써드 파티 앱이 그대로 전달받아 트위터 로그인을 진행했다.
-트위터 계정의 비밀번호를 써드 파티 앱이 그대로(plain text) 저장하는 등 보안상 허점이 굉장히 많았다. 이런 초기 문제 해결하기 위해 Google의 AuthSub, Yahoo BBAuth 등 다양한 회사에서 유사한 기능을 구현했지만
-표준화 되어 있지 않고, 상호간 호환되지 않는 문제점이 존재했다. 2007년 당시 트위터 치프 아키텍트 Blaine Cook 은 이런 말을 했다. We want something like Flickr Auth / Google AuthSub / Yahoo! BBAuth,
-but published as an open standard, with common server and client li…"/><meta data-react-helmet="true" property="og:author" content="임성후"/><meta data-react-helmet="true" property="og:image" content="/og-image.png"/><meta data-react-helmet="true" property="og:type" content="website"/><link rel="preload" as="font" type="font/woff2" crossorigin="anonymous" href="/static/webfonts/s/roboto/v30/KFOlCnqEu92Fr1MmSU5fBBc4.woff2"/><link rel="preload" as="font" type="font/woff2" crossorigin="anonymous" href="/static/webfonts/s/roboto/v30/KFOmCnqEu92Fr1Mu4mxK.woff2"/><link rel="preload" as="font" type="font/woff2" crossorigin="anonymous" href="/static/webfonts/s/roboto/v30/KFOlCnqEu92Fr1MmEU9fBBc4.woff2"/><style>@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:300;src:url(/static/webfonts/s/roboto/v30/KFOlCnqEu92Fr1MmSU5fBBc4.woff2) format("woff2")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:400;src:url(/static/webfonts/s/roboto/v30/KFOmCnqEu92Fr1Mu4mxK.woff2) format("woff2")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:500;src:url(/static/webfonts/s/roboto/v30/KFOlCnqEu92Fr1MmEU9fBBc4.woff2) format("woff2")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:300;src:url(/static/webfonts/s/roboto/v30/KFOlCnqEu92Fr1MmSU5fBBc-.woff) format("woff")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:400;src:url(/static/webfonts/s/roboto/v30/KFOmCnqEu92Fr1Mu4mxM.woff) format("woff")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:500;src:url(/static/webfonts/s/roboto/v30/KFOlCnqEu92Fr1MmEU9fBBc-.woff) format("woff")}</style><link rel="sitemap" type="application/xml" href="/sitemap.xml"/><link rel="alternate" type="application/rss+xml" href="/rss.xml"/><style>.gatsby-image-wrapper{position:relative;overflow:hidden}.gatsby-image-wrapper picture.object-fit-polyfill{position:static!important}.gatsby-image-wrapper img{bottom:0;height:100%;left:0;margin:0;max-width:none;padding:0;position:absolute;right:0;top:0;width:100%;object-fit:cover}.gatsby-image-wrapper [data-main-image]{opacity:0;transform:translateZ(0);transition:opacity .25s linear;will-change:opacity}.gatsby-image-wrapper-constrained{display:inline-block;vertical-align:top}</style><noscript><style>.gatsby-image-wrapper noscript [data-main-image]{opacity:1!important}.gatsby-image-wrapper [data-placeholder-image]{opacity:0!important}</style></noscript><script type="module">const e="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;e&&document.body.addEventListener("load",(function(e){if(void 0===e.target.dataset.mainImage)return;if(void 0===e.target.dataset.gatsbyImageSsr)return;const t=e.target;let a=null,n=t;for(;null===a&&n;)void 0!==n.parentNode.dataset.gatsbyImageWrapper&&(a=n.parentNode),n=n.parentNode;const o=a.querySelector("[data-placeholder-image]"),r=new Image;r.src=t.currentSrc,r.decode().catch((()=>{})).then((()=>{t.style.opacity=1,o&&(o.style.opacity=0,o.style.transition="opacity 500ms linear")}))}),!0);</script><link as="script" rel="preload" href="/webpack-runtime-02f59eb8e2b9c93c6a8d.js"/><link as="script" rel="preload" href="/framework-0e1bf37de02f7cef2174.js"/><link as="script" rel="preload" href="/app-3050603e25773489362d.js"/><link as="script" rel="preload" href="/f9d3028dbef90a6e9b8db85387d63dd9f4edf538-97a8d3c35e8d1fa14a1b.js"/><link as="script" rel="preload" href="/component---src-templates-blog-template-js-ef83b594aa693e649d30.js"/><link as="fetch" rel="preload" href="/page-data/Oauth2/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/1073350324.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/1956554647.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/2938748437.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/app-data.json" crossorigin="anonymous"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div class="page-wrapper"><header class="page-header-wrapper"><div class="page-header"><div class="front-section"><a class="link" href="/">Hoo</a></div><div class="trailing-section"><a class="link" href="/about">about</a><a class="link" href="/posts">posts</a><div class="MuiAutocomplete-root MuiAutocomplete-hasPopupIcon css-1l6di18" role="combobox" aria-expanded="false"><div class="search-input-wrapper"><div class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root search-input css-feqhe6"><div class="MuiInput-root MuiInput-underline MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-adornedEnd MuiAutocomplete-inputRoot css-11tfndm"><input type="text" aria-invalid="false" autoComplete="off" value="" class="MuiInput-input MuiInputBase-input MuiInputBase-inputAdornedEnd MuiAutocomplete-input MuiAutocomplete-inputFocused css-mnn31" aria-autocomplete="list" autoCapitalize="none" spellcheck="false"/><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium search-icon css-vubbuv" focusable="false" viewBox="0 0 24 24" aria-hidden="true" data-testid="SearchOutlinedIcon"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path></svg></div></div></div></div></div></div></header><main class="page-content"><header class="post-header"><div class="emoji">🌿🤙🏻</div><div class="info"><div class="categories"><a class="category" href="/posts/Oauth2">Oauth2</a></div></div><h1 class="title">about OAuth2.0</h1><div class="info"><div class="author">posted by <strong>Hoo</strong>,</div> <!-- -->May 15, 2023</div></header><div class="post-content"><div class="markdown"><h1 id="oauth-등장배경-open-authorization" style="position:relative;"><a href="#oauth-%EB%93%B1%EC%9E%A5%EB%B0%B0%EA%B2%BD-open-authorization" aria-label="oauth 등장배경 open authorization permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>OAuth 등장배경 (Open Authorization)</h1>
-<p>초기 트위터 시절, 써드 파티 앱을 사용해 트위터에 글을 올리는 기능이 있었다.
-지금은 상상도 하기 힘든 일이지만, 당시에는 트위터의 비밀번호를 써드 파티 앱이 그대로 전달받아 트위터 로그인을 진행했다.
-트위터 계정의 비밀번호를 써드 파티 앱이 그대로(plain text) 저장하는 등 보안상 허점이 굉장히 많았다.</p>
-<p>이런 초기 문제 해결하기 위해 Google의 AuthSub, Yahoo BBAuth 등 다양한 회사에서 유사한 기능을 구현했지만
-표준화 되어 있지 않고, 상호간 호환되지 않는 문제점이 존재했다.</p>
-<p>2007년 당시 트위터 치프 아키텍트 Blaine Cook 은 이런 말을 했다.</p>
-<blockquote>
-<p>We want something like Flickr Auth / Google AuthSub / Yahoo! BBAuth,
-but published as an open standard, with common server and client libraries, etc.</p>
-</blockquote>
-<p>여러 전문가가 모여 Oauth1.0 스펙을 정의했지만, 2009년 11월 Oauth1.1 을 drop 하고 이전과 완전 다른 2.0 버전에 집중하기로 한다.
-OAuth2.0은 모바일 환경에서도 적용 가능하도록 업데이트하고 기존 1 버전의 혼란스러운 면을 단순화하는 것을 목표로 했다.</p>
-<br/>
-<h1 id="oauth-란" style="position:relative;"><a href="#oauth-%EB%9E%80" aria-label="oauth 란 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>OAuth 란?</h1>
-<p><strong>외부서비스의 인증 및 권한 부여를 관리하는 범용 Framework.</strong>
-리소스 소유자를 대신해 <code class="language-text">구글, 페이스북</code> 같은 플랫폼의 사용자 데이터에 접근하여 사용자의 접근 권한을 가져올 수 있는 <code class="language-text">표준</code> 프로토콜</p>
-<br/>
-<h1 id="oauth20-용어" style="position:relative;"><a href="#oauth20-%EC%9A%A9%EC%96%B4" aria-label="oauth20 용어 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Oauth2.0 용어</h1>
-<p><span
-      class="gatsby-resp-image-wrapper"
-      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; "
-    >
-      <span
-    class="gatsby-resp-image-background-image"
-    style="padding-bottom: 110.55555555555556%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAWCAYAAADAQbwGAAAACXBIWXMAAAsTAAALEwEAmpwYAAADeklEQVQ4y61VvW/bRhTn2lVLxhpIuhTtYCQoECfof+AuRZChQoCiS20DHtoEgYuiLTw0KdqgiLfAThwPNQrEAeJ2cBDly41iRaZs2bFiy5JFyRJlSqJEfVCWKFK8X3BHkSblZOsBx7v3ce9+770fSQ4AFLWMfHkf1WaF7cuNEmqHCjWBEMKmve8f/TqOPnJyGsHtx+CTLxFJrmAzzWMnt+kJaB8s1SSs7DwFnwzidWbtmA9nmiZTCoUEIqkgtsQItnqObgT22tZbkGsFyNUi6s3aMR+G0A6aFHbxPPgMBtGp+Rg6d3qPcn9jLn4doppiskmsGA7C7H4WJ0+eAsdxmLo5xXTdbtcTpGsabF0rPcc1fgR/Rr/H7PavnrQ5eoiOUCjEgtHp9/uZzjAMx9lGkK2n8MvyN/jqwWe4+uIC/hFu93xMbw0VRcH4+DiGh4cRCARgl8JG2DWti//iZ/D78lXcWb2BHx+OwSAdTzlYDePxOHw+HwYGBjA0NMRQTk5OOiipsx1wcW0Rl2a+xOX5bzH79K7nMqcpoihicHDQSZnOubk5Tx1tBB1Nx5NoAI+jS1BV9RhXnZQ7nQ4WFhYwPT2NRCIBd/ffR+L3Erv/oI3sXcRmDTJNT32Z3dqAcys1XUNbb7uC0XQN1kHrYoJu12Qrs1MgtMY2ILuG74LOaECDuGSPvT8rm9hujt2T7mFidwKqUbec1AAg/wDSkZi4nali6n4cuaLVDDOdALl2BYj1XlXTBGcSK72YGsOJJyfw6YtPcDk+QQkD4V8fZkY5EOFrUIpf/PkZzo89xOgfIev8xc9BPuRAvjhNu8oy4mx0kibhzMoZfLR8CndyFr8q4XOI3uZADn5j8sStCM6OLOHG/JYV8KdRkI8/APnO3/dx6AXNa3mEG2HLyB4VADzs6rY0A7F03WEFoc2LhgCtfdRld0MKogRhR3AuKMkKwnwMuqEzuVgsYDPKQ5KsmjabTaxsbKJULh8hdHe3qTYhinlH1rUOspmMI5sGQSadhaF3ewpAzGSht3Vvyo1Wjf0CpGoOtZaCYvUA+UoWUlVEyzhEsXbAPsAVVUZDq0FRZVQaMvNRDmXI9QKqauXoTSlU8wgn/gOfCCKaCmNDWGW/hEjyJXbFN9gvpbCeCmE99QpreyG8TkfwJrvB5vreK6zvhSAUdo94+H8NmvJbmcBJTFwlP4AAAAAASUVORK5CYII='); background-size: cover; display: block;"
-  ></span>
-  <img
-        class="gatsby-resp-image-image"
-        alt="img_2.png"
-        title="img_2.png"
-        src="/static/e75f41652b5004538819a424c00bb739/f058b/img_2.png"
-        srcset="/static/e75f41652b5004538819a424c00bb739/e9ff0/img_2.png 180w,
-/static/e75f41652b5004538819a424c00bb739/f21e7/img_2.png 360w,
-/static/e75f41652b5004538819a424c00bb739/f058b/img_2.png 630w"
-        sizes="(max-width: 630px) 100vw, 630px"
-        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
-        loading="lazy"
-        decoding="async"
-      />
-    </span></p>
-<h3 id="resource-owner" style="position:relative;"><a href="#resource-owner" aria-label="resource owner permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Resource Owner</h3>
-<ul>
-<li>리소스 소유자.</li>
-<li>즉 써드파티 어플리케이션을 사용하면서 카카오, 구글 등의 플랫폼에 개인 정보를 저장해둔 사용자를 의미.</li>
-<li>이때 개인 정보는 사용자의 이름 생년월일, 이메일 뿐만 아니라 카카오톡 친구 목록, 구글 캘린더 정보 등이 해당</li>
-</ul>
-<h3 id="client" style="position:relative;"><a href="#client" aria-label="client permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Client</h3>
-<ul>
-<li>Resource Server 의 자원을 이용하고자 하는 서비스(우리의 애플리케이션)</li>
-<li>Client 와 Resource Owner 를 헷갈리지 않는 것이 중요. Oauth2.0에서 말하는 Client 는 대부분 써드파티 어플리케이션의 <code class="language-text">Server</code>를 의미한다.</li>
-</ul>
-<h3 id="authorization-server" style="position:relative;"><a href="#authorization-server" aria-label="authorization server permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Authorization Server</h3>
-<ul>
-<li><code class="language-text">Resource Owner</code> 를 인증하여 Client 에게 액세스 토큰을 발급하는 서버</li>
-<li>Access Token, Refresh Token 등을 발급</li>
-</ul>
-<h3 id="resource-server" style="position:relative;"><a href="#resource-server" aria-label="resource server permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Resource Server</h3>
-<ul>
-<li>Oauth2.0 을 관리하는 서버(구글, 카카오)의 자원을 관리하는 서버. 우리가 만드는 써드파티 서버 아님.</li>
-</ul>
-<br/>
-<h1 id="oauth20-사용절차" style="position:relative;"><a href="#oauth20-%EC%82%AC%EC%9A%A9%EC%A0%88%EC%B0%A8" aria-label="oauth20 사용절차 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>OAuth2.0 사용절차</h1>
-<p>OAuth2.0 을 사용하기 위해선 Client 를 Resource Server 에 우선 등록해야 한다.
-이 때 <code class="language-text">Redirect URI</code>를 등록하는데, 사용자 인증을 마친 후 (ex, Kakao login) 사용자를 리디렉션 시킬 위치를 의미한다.</p>
-<h3 id="redirect-uri" style="position:relative;"><a href="#redirect-uri" aria-label="redirect uri permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Redirect URI</h3>
-<ul>
-<li>OAuth2.0 서비스 인증을 마친 사용자는 사전에 등록된 Redirect URI 로 리디렉션 된다.</li>
-<li>이 Redirect URI 는 Front-end uri 가 될 수도 있고, Back-end API end point 가 될 수도 있다. (즉 개발자가 정하는 것)</li>
-<li>Redirect URI는 서비스에 따라 여러개 등록할 수도 있다.</li>
-</ul>
-<h3 id="client-id-client-secret" style="position:relative;"><a href="#client-id-client-secret" aria-label="client id client secret permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Client ID, Client Secret</h3>
-<ul>
-<li>등록 과정을 마치면 Client ID, Secret 을 얻을 수 있다. (Secret 은 Optional 일 수 있다.)</li>
-<li>이 둘은 Access Token 을 획득하는데 사용된다.</li>
-</ul>
-<br/>
-<h1 id="oauth20-mechanism" style="position:relative;"><a href="#oauth20-mechanism" aria-label="oauth20 mechanism permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Oauth2.0 Mechanism</h1>
-<p><span
-      class="gatsby-resp-image-wrapper"
-      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 720px; "
-    >
-      <span
-    class="gatsby-resp-image-background-image"
-    style="padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAACXBIWXMAAAsTAAALEwEAmpwYAAACUklEQVQ4y42TW0/bQBCF8///SR/bvvUBCYEEApoCCbkQcsHESWzHiePb3uz9qqxDWkCiHWllzXr37JlzZloWsEphhcBWFS7fL62xRdH8o4lCGGZBya/HmG/XS86HO24mGV4kmUaSUte0rJSY7gOmP6BaLHiNarVyeb1aYY1xe7t5wN1Zj85jzPdLny+XAT+ufAYnN7RP7tksYlp7JtVoRN3tYsMQZWqEMtggwM7nVL5/ZM52A/e3VE9jODxipUL1+/DQgV1Cy7HJC1S8IUlLrnsLbkcBshCIKG5Kt2CtdcB75jZJGllsI5DNMuo8d7kDNErjzWO8MGM4W9Ofrek+hTx7Ie+jlrJhdgB0XymPsrRcKcZQJBmFNEwXW3rTNd4yIdvsUKZimwqibYHUFRzM48iQxlCtG0AOjpqiROgKbSoKqUlzQRIlLOOcu6eIu1HIYp1jshxb13+VvAeUbwGVUIzGK+ZRhrfcEW4K1tuCONgwmIb0Bi/0HhcO0JsFGPOeofzIMNumb8WyFpXmRHFG8BJw235k6mRIMdp8DmikwvdjupOI2+GKi86c4SyiP/SdrkmhyEpNnAoQJdhPSm5M0dRCMAtSbjoe52ddxk8+SMFl1+fr6ZDT9jPtwQpbllD/ByBKoSuLVAYhFFIo2F9+nRwL20w6XT9l6HpLa2bPIT+HK64efC46PoNpxNwLncvefM1ksmTyEpOuE6ev/ZeGu3jXjNfhUF3V7nIuNKPxkn7fY+KtKfbmfQAU70reN2r1x7kj8OHQm9DK9eEbl/fjeZiU3/tvgx+eSoqGAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
-  ></span>
-  <img
-        class="gatsby-resp-image-image"
-        alt="img_5.png"
-        title="img_5.png"
-        src="/static/4f80637cd54ed56d0059ebef393c15dd/37523/img_5.png"
-        srcset="/static/4f80637cd54ed56d0059ebef393c15dd/e9ff0/img_5.png 180w,
-/static/4f80637cd54ed56d0059ebef393c15dd/f21e7/img_5.png 360w,
-/static/4f80637cd54ed56d0059ebef393c15dd/37523/img_5.png 720w,
-/static/4f80637cd54ed56d0059ebef393c15dd/bcb8c/img_5.png 879w"
-        sizes="(max-width: 720px) 100vw, 720px"
-        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
-        loading="lazy"
-        decoding="async"
-      />
-    </span></p>
-<ol>
-<li>Resource Owner 가 Client 에게 인증 요청 보냄
-client 는 authorization server 에 로그인 요청</li>
-</ol>
-<ol start="2">
-<li>Login Page 제공 from Authorization Server</li>
-</ol>
-<ol start="3">
-<li>
-<p>Resource Owner의 ID/PW 제공
-이 정보는 Client 에게 가는 것이 아닌 Authorization Server 로 전송됨</p>
-</li>
-<li>
-<p>Authorization Server 는 Authorization Code 발급</p>
-</li>
-<li>
-<p>사용자는 Authorization Code 와 함께 Client 의 Redirect Uri 로 리다이렉트 됨</p>
-</li>
-</ol>
-<ul>
-<li>이때 Redirect Uri를 어떤 페이지라 생각하지 말고, API Controller 로 생각하자.</li>
-</ul>
-<ol start="6">
-<li>
-<p>Client ->  Authorization Code, Client Id, Client Secret (Optional) => Authorization Server</p>
-</li>
-<li>
-<p><code class="language-text">Access Token</code> 발급 -> DB 에 저장</p>
-</li>
-<li>
-<p>로그인 성공</p>
-</li>
-</ol>
-<p><span
-      class="gatsby-resp-image-wrapper"
-      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 720px; "
-    >
-      <span
-    class="gatsby-resp-image-background-image"
-    style="padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAACXBIWXMAAAsTAAALEwEAmpwYAAAB7UlEQVQ4y82Uy27bMBBF/f/f0G3RH2iB7tKFm02QWgiMwLGMuJFkx4qeliWaokiegpQDG0mWWXQAgpyLmTtPaWKtxR6PWCmxgNfd7fSuwxrjdSf5XhKlguk85XpZEzy1rLOeOJekjfJ2E5Pn6MUCvV5jDgcMYIRAb7aYLMNU1UhoNI+zkLsg4dfsmW/TDV+uNvyeLplfzbi7XqJ7xcSUJUMQoOdzOIoxlV5i4hizXkNdnfKzkDyhb2/R2x2v0qcZ8s8MViFozcSXVFXopmGTHZgGMaukxHQCmZfU+466lezbnjwt6ePkHNgF0QPsa0zbjSU7uC4biloQxiVff865ud9S7AXL5ZYgfCF42HEXptwsdjxvS4Qc6IRCCEUrB6KkQKvBh/CEuu18j3wJSiOVdtPhUOwZtEENGqU02liarGIVFdyvcx6eclZJRRS9wDCcM5RNyy5raIXyzs4xLQ5s4sxjTSvHI3qql4rHpGTxN/fnISqJogyj1DlDN1WrNXHa8GMa8n0asssPfjjv5Hh8jw099pLQCgHGeMD1cle0vuGm6867edpPhxltMNZijBnXzO3xW0KXob0I6qffdeP7ROjfp2V/xf19lB8TXjp/KuGnZ/gfEL4divuzvDVyJFK+J3S2Fzb+7nvsMH4p/wDr0oxmY+bJtwAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
-  ></span>
-  <img
-        class="gatsby-resp-image-image"
-        alt="img_3.png"
-        title="img_3.png"
-        src="/static/c875dd8a9e03158eda077e1f18d779a5/37523/img_3.png"
-        srcset="/static/c875dd8a9e03158eda077e1f18d779a5/e9ff0/img_3.png 180w,
-/static/c875dd8a9e03158eda077e1f18d779a5/f21e7/img_3.png 360w,
-/static/c875dd8a9e03158eda077e1f18d779a5/37523/img_3.png 720w,
-/static/c875dd8a9e03158eda077e1f18d779a5/bcb8c/img_3.png 879w"
-        sizes="(max-width: 720px) 100vw, 720px"
-        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
-        loading="lazy"
-        decoding="async"
-      />
-    </span></p>
-<ol start="9">
-<li>
-<p>사용자의 서비스 요청</p>
-</li>
-<li>
-<p>Access Token 으로 <code class="language-text">Resouce Server</code> 호출</p>
-</li>
-<li>
-<p>Access Token 검증 후 리소스 제공</p>
-</li>
-<li>
-<p>Client 는 Resource Server 로 부터 전달받은 Resource 제공</p>
-</li>
-</ol>
-<br/>
-<h1 id="authorization-code-가-필요한-이유" style="position:relative;"><a href="#authorization-code-%EA%B0%80-%ED%95%84%EC%9A%94%ED%95%9C-%EC%9D%B4%EC%9C%A0" aria-label="authorization code 가 필요한 이유 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Authorization Code 가 필요한 이유</h1>
-<p>Access Token 과 Authorization Code 가 헷갈릴 수 있다.
-Access token 과 Auth Code 모두 Auth server 에서 발급되는데 왜 굳이 두 과정을 나누어 발급하는 것일까?</p>
-<p>Access Token 은 문자 그대로 (Resource 에) Access 하기 위한 토큰으로, 탈취되면 개인정보도 함께 탈취될 수 가능성이 있다.
-즉 Access Token 은 보안 상 이유로 클라이언트에게 전달하지 않고, Client(서버) 가 보관하며 필요시에만 Resource Server 에 전송하여 Resource 를 요청한다.</p>
-<p><span
-      class="gatsby-resp-image-wrapper"
-      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 720px; "
-    >
-      <span
-    class="gatsby-resp-image-background-image"
-    style="padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAACXBIWXMAAAsTAAALEwEAmpwYAAACdElEQVQ4y32TWXObMBSF/f//SV/btz70oWmmS9qsXuPYsVnMKjAGIyFAXwdw0yRd7sxl5grp6NxzdEcGMFWFkRLTNPR1l1pjjsfhH0McZc0mKLm6F7y98Pi0yPi+zrEixWOkKHXLyChFPZ5Qz+Y0ux2/ovH9vm59H1PX/VrmBNycTbm7F7z74vLmS8D7by7zD9+5/HBLshOMOibNckk7HmPCkKpukVWNCQKM49C47hNz0gRur2keVnC6xKiKajaDyR1ke0Y9m6KgEgn7Q8nFdMf1fYA6SmQYD60bM2TT0Hg+Jk0HWcwgkMlz2qLo6x6wrhssN8GOChZbwXwrGK8jLDvmdXSa8kvn7pKepXqSZdQvpAm55ZCHMavZhvHNA5v5hmxrI2OBcDyCjUsZCwg8mn06gJrBrt5QrU+AuqKOInRxpCwVSiqKQpLtC1I/xg0yrhceV/Mdjr+n2mfUcTiAnew3Uv0GRGuUSHiwBK4oscOCMFOIgyKJMhaWYLrcMVsFeKnEdgQ6STp6zxg+A+x6r32PbOfTFjmoI6iSNj8g/YDA8vDmKy7PrlgtHTLHQ3neq5afMwSqQ46zcrib2lzePHJ+sWQ2t5ncrsj3B1KRkSUZcZj0ehsln7n8mmH/bhpaVbGNCn5MHM7Pp6zXHuiKr1OPt2dLPl7bXN6HoNQLl/8O2BWVQjctSmmkrPqkLH9PTmtIc4XwBbTtvwG7T6s1m23Ij4XPt4nL5zuX+WOEY4V4osBy4p7x2hYc4v1gyP8Aa1WRiWx4BadNbdP2hwupWa48ZjOLtRVzTA9/AZR/akhTPzn3BHza9CJ0hWnbly5343malJ+qX378fjOBNQAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
-  ></span>
-  <img
-        class="gatsby-resp-image-image"
-        alt="img_6.png"
-        title="img_6.png"
-        src="/static/c4a539b340402b14bf4fb7eca8c89470/37523/img_6.png"
-        srcset="/static/c4a539b340402b14bf4fb7eca8c89470/e9ff0/img_6.png 180w,
-/static/c4a539b340402b14bf4fb7eca8c89470/f21e7/img_6.png 360w,
-/static/c4a539b340402b14bf4fb7eca8c89470/37523/img_6.png 720w,
-/static/c4a539b340402b14bf4fb7eca8c89470/bcb8c/img_6.png 879w"
-        sizes="(max-width: 720px) 100vw, 720px"
-        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
-        loading="lazy"
-        decoding="async"
-      />
-    </span></p>
-<p><code class="language-text">Authorization Code</code> 는 Auth Server 를 통해 url 의 쿼리 파라미터로 전달된다. (Client Server 를 거치지 않고 곧바로 사용자에게 전달)
-쿼리 파라미터에 담긴 정보는 비교적 노출이 쉽기 때문에 탈취될 위험이 존재하지만, 그렇기 때문에 비교적 보안에 덜 민감한 Auth Code 를 쿼리 파라미터에 담아 전송한다.</p>
-<p>즉 Authorization Code 는 Access Token 을 발급받기 위한 단계적 보안으로 생각할 수 있다.</p>
-<br/>
-<h1 id="oauth20-권한-부여-방식" style="position:relative;"><a href="#oauth20-%EA%B6%8C%ED%95%9C-%EB%B6%80%EC%97%AC-%EB%B0%A9%EC%8B%9D" aria-label="oauth20 권한 부여 방식 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>OAuth2.0 권한 부여 방식</h1>
-<p>OAuth2.0 에서는 다양한 클라이언트 환경에 맞는 네 종류의 권한 부여 방식을 제공합니다. 본 포스팅에서 다룬 방식은 <code class="language-text">권한 부여 승인 코드 방식</code>입니다.</p>
-<h4 id="1-authorization-code-grant--권한-부여-승인-코드-방식" style="position:relative;"><a href="#1-authorization-code-grant--%EA%B6%8C%ED%95%9C-%EB%B6%80%EC%97%AC-%EC%8A%B9%EC%9D%B8-%EC%BD%94%EB%93%9C-%EB%B0%A9%EC%8B%9D" aria-label="1 authorization code grant  권한 부여 승인 코드 방식 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>1. Authorization Code Grant | 권한 부여 승인 코드 방식</h4>
-<ul>
-<li>가장 많이 사용되는 방식으로 Auth Code 를 전달하여 권한 부여 승인을 획득</li>
-</ul>
-<h4 id="2-implicit-grant--권한-부여-승인-코드-방식" style="position:relative;"><a href="#2-implicit-grant--%EA%B6%8C%ED%95%9C-%EB%B6%80%EC%97%AC-%EC%8A%B9%EC%9D%B8-%EC%BD%94%EB%93%9C-%EB%B0%A9%EC%8B%9D" aria-label="2 implicit grant  권한 부여 승인 코드 방식 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2. Implicit Grant | 권한 부여 승인 코드 방식</h4>
-<ul>
-<li>자격증명을 안전하게 저장하기 힘든 클라이언트에게 최적화된 방식</li>
-</ul>
-<h4 id="3-resource-owner-password-credentials-grant" style="position:relative;"><a href="#3-resource-owner-password-credentials-grant" aria-label="3 resource owner password credentials grant permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>3. Resource Owner Password Credentials Grant</h4>
-<ul>
-<li>간단히 Username, Password 로 Access Token 을 얻는 방식</li>
-</ul>
-<h4 id="4-client-credentials-grant" style="position:relative;"><a href="#4-client-credentials-grant" aria-label="4 client credentials grant permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>4. Client Credentials Grant</h4>
-<ul>
-<li>클라이언트 자격증명만으로 Access Token 획득하는 방식</li>
-</ul>
-<br/>
-<h1 id="oauth20-의-장단점" style="position:relative;"><a href="#oauth20-%EC%9D%98-%EC%9E%A5%EB%8B%A8%EC%A0%90" aria-label="oauth20 의 장단점 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>OAuth2.0 의 장단점</h1>
-<p><strong>장점</strong></p>
-<ol>
-<li>손쉬운 회원가입 및 로그인</li>
-<li>사용자 정보에 무작위적으로 접근하지 않고 안전하게 접근할 수 있다.</li>
-</ol>
-<p><strong>단점</strong></p>
-<ol>
-<li>사용자 정보에 제한적 접근</li>
-<li>중복 가입 방지를 위한 추가 로직 필요</li>
-</ol>
-<br/>
-<br/></div></div><div class="post-navigator"><div class="post-navigator-card-wrapper"><a class="post-card prev" href="/Scailing up the Prime Video/"><div class="direction">이전 글</div><div class="title">Prime Video 서비스의 오디오/비디오 모니터링 서비스 확장 및 비용 절감 90% 사례</div></a></div><div class="post-navigator-card-wrapper"><a class="post-card next" href="/백엔드 반상회 회고/"><div class="direction">다음 글</div><div class="title">글또 백엔드 빌리지 반상회 준비위 회고</div></a></div></div></main><footer class="page-footer-wrapper"><p class="page-footer">© <!-- -->2023<!-- --> <a href="https://github.com/hugehoo">임성후</a> powered by<a href="https://github.com/zoomKoding/zoomkoding-gatsby-blog"> zoomkoding-gatsby-blog</a></p></footer><div class="dark-mode-button-wrapper"><button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium dark-mode-button css-1yxmbwk" tabindex="0" type="button"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeLarge dark-mode-icon css-6flbmm" focusable="false" viewBox="0 0 24 24" aria-hidden="true" data-testid="DarkModeIcon"><path d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9 9-4.03 9-9c0-.46-.04-.92-.1-1.36-.98 1.37-2.58 2.26-4.4 2.26-2.98 0-5.4-2.42-5.4-5.4 0-1.81.89-3.42 2.26-4.4-.44-.06-.9-.1-1.36-.1z"></path></svg></button></div></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/Oauth2/";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-cd840d73727c2e366b63.js"],"app":["/app-3050603e25773489362d.js"],"component---cache-caches-gatsby-plugin-offline-app-shell-js":["/component---cache-caches-gatsby-plugin-offline-app-shell-js-3c26d4b7e3608ed0ece4.js"],"component---src-pages-404-js":["/component---src-pages-404-js-4917da7ef5b541e98a81.js"],"component---src-pages-about-js":["/component---src-pages-about-js-b5804eba3d16afcb3700.js"],"component---src-pages-index-js":["/component---src-pages-index-js-bc882cd03f70c89c8148.js"],"component---src-templates-blog-template-js":["/component---src-templates-blog-template-js-ef83b594aa693e649d30.js"],"component---src-templates-category-template-js":["/component---src-templates-category-template-js-fea460fedd50cffb10cd.js"]};/*]]>*/</script><script src="/polyfill-cd840d73727c2e366b63.js" nomodule=""></script><script src="/component---src-templates-blog-template-js-ef83b594aa693e649d30.js" async=""></script><script src="/f9d3028dbef90a6e9b8db85387d63dd9f4edf538-97a8d3c35e8d1fa14a1b.js" async=""></script><script src="/app-3050603e25773489362d.js" async=""></script><script src="/framework-0e1bf37de02f7cef2174.js" async=""></script><script src="/webpack-runtime-02f59eb8e2b9c93c6a8d.js" async=""></script></body></html>
+  </script><title data-react-helmet="true">글또 백엔드 빌리지 반상회 준비위 회고</title><meta data-react-helmet="true" name="viewport" content="initial-scale=1, width=device-width"/><meta data-react-helmet="true" property="og:title" content="글또 백엔드 빌리지 반상회 준비위 회고"/><meta data-react-helmet="true" property="og:site_title" content="글또 백엔드 빌리지 반상회 준비위 회고"/><meta data-react-helmet="true" name="description" content="처음 반상회 준비위 모집글을 봤을 땐, 이직 준비생이 어딜 한가하게 눈을 돌리나 하는 마음에 오랫동안 고민했다.
+스스로를 시선에 많이 가두는 시기였다. 생각보다 명함을 많이 못돌렸지만, 그래도 심리적 거리감이 가깝다고 생각한 분들에게 드릴 수 있어서 만족한다. 같이 컨셉 회의한 나영님, 동인님에게 이 글을 빌어 감사 인사를 전한다. 두 분 덕분에 회의도 준비도 잘 진행할 수 있었다.
+다른 사람이 들으면 미친거 아닌가 하는 헛소리를 두분이 잘 들어주신 덕분에 네트워킹 시간이 한층 재밌어졌으리라 믿는다. Backspace 라는 컨셉을 준비해주신 나영님 덕분에 빌리지 반상회가 전체적으로 탄탄해진 느낌을 받았다. 컨셉에 걸맞는 아이콘을 직접 제작해주시고.
+그에 맞는 뒤풀이까지 깔끔했다. 이번 반상회 컨셉은 깔끔인가? 재휘의 깔끔한 mc 진행부터 마무리 뒤풀이까지 뭐 하나 아쉬운 점이 없었다. 사실 행상 당일까지만 해도, 어 이대로 행사 진행해도 되는건가? 뭔가 너무 느슨한데 라는 불안감이…"/><meta data-react-helmet="true" property="og:description" content="처음 반상회 준비위 모집글을 봤을 땐, 이직 준비생이 어딜 한가하게 눈을 돌리나 하는 마음에 오랫동안 고민했다.
+스스로를 시선에 많이 가두는 시기였다. 생각보다 명함을 많이 못돌렸지만, 그래도 심리적 거리감이 가깝다고 생각한 분들에게 드릴 수 있어서 만족한다. 같이 컨셉 회의한 나영님, 동인님에게 이 글을 빌어 감사 인사를 전한다. 두 분 덕분에 회의도 준비도 잘 진행할 수 있었다.
+다른 사람이 들으면 미친거 아닌가 하는 헛소리를 두분이 잘 들어주신 덕분에 네트워킹 시간이 한층 재밌어졌으리라 믿는다. Backspace 라는 컨셉을 준비해주신 나영님 덕분에 빌리지 반상회가 전체적으로 탄탄해진 느낌을 받았다. 컨셉에 걸맞는 아이콘을 직접 제작해주시고.
+그에 맞는 뒤풀이까지 깔끔했다. 이번 반상회 컨셉은 깔끔인가? 재휘의 깔끔한 mc 진행부터 마무리 뒤풀이까지 뭐 하나 아쉬운 점이 없었다. 사실 행상 당일까지만 해도, 어 이대로 행사 진행해도 되는건가? 뭔가 너무 느슨한데 라는 불안감이…"/><meta data-react-helmet="true" property="og:author" content="임성후"/><meta data-react-helmet="true" property="og:image" content="/og-image.png"/><meta data-react-helmet="true" property="og:type" content="website"/><link rel="preload" as="font" type="font/woff2" crossorigin="anonymous" href="/static/webfonts/s/roboto/v30/KFOlCnqEu92Fr1MmSU5fBBc4.woff2"/><link rel="preload" as="font" type="font/woff2" crossorigin="anonymous" href="/static/webfonts/s/roboto/v30/KFOmCnqEu92Fr1Mu4mxK.woff2"/><link rel="preload" as="font" type="font/woff2" crossorigin="anonymous" href="/static/webfonts/s/roboto/v30/KFOlCnqEu92Fr1MmEU9fBBc4.woff2"/><style>@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:300;src:url(/static/webfonts/s/roboto/v30/KFOlCnqEu92Fr1MmSU5fBBc4.woff2) format("woff2")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:400;src:url(/static/webfonts/s/roboto/v30/KFOmCnqEu92Fr1Mu4mxK.woff2) format("woff2")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:500;src:url(/static/webfonts/s/roboto/v30/KFOlCnqEu92Fr1MmEU9fBBc4.woff2) format("woff2")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:300;src:url(/static/webfonts/s/roboto/v30/KFOlCnqEu92Fr1MmSU5fBBc-.woff) format("woff")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:400;src:url(/static/webfonts/s/roboto/v30/KFOmCnqEu92Fr1Mu4mxM.woff) format("woff")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:500;src:url(/static/webfonts/s/roboto/v30/KFOlCnqEu92Fr1MmEU9fBBc-.woff) format("woff")}</style><link rel="sitemap" type="application/xml" href="/sitemap.xml"/><link rel="alternate" type="application/rss+xml" href="/rss.xml"/><style>.gatsby-image-wrapper{position:relative;overflow:hidden}.gatsby-image-wrapper picture.object-fit-polyfill{position:static!important}.gatsby-image-wrapper img{bottom:0;height:100%;left:0;margin:0;max-width:none;padding:0;position:absolute;right:0;top:0;width:100%;object-fit:cover}.gatsby-image-wrapper [data-main-image]{opacity:0;transform:translateZ(0);transition:opacity .25s linear;will-change:opacity}.gatsby-image-wrapper-constrained{display:inline-block;vertical-align:top}</style><noscript><style>.gatsby-image-wrapper noscript [data-main-image]{opacity:1!important}.gatsby-image-wrapper [data-placeholder-image]{opacity:0!important}</style></noscript><script type="module">const e="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;e&&document.body.addEventListener("load",(function(e){if(void 0===e.target.dataset.mainImage)return;if(void 0===e.target.dataset.gatsbyImageSsr)return;const t=e.target;let a=null,n=t;for(;null===a&&n;)void 0!==n.parentNode.dataset.gatsbyImageWrapper&&(a=n.parentNode),n=n.parentNode;const o=a.querySelector("[data-placeholder-image]"),r=new Image;r.src=t.currentSrc,r.decode().catch((()=>{})).then((()=>{t.style.opacity=1,o&&(o.style.opacity=0,o.style.transition="opacity 500ms linear")}))}),!0);</script><link as="script" rel="preload" href="/webpack-runtime-02f59eb8e2b9c93c6a8d.js"/><link as="script" rel="preload" href="/framework-0e1bf37de02f7cef2174.js"/><link as="script" rel="preload" href="/app-3050603e25773489362d.js"/><link as="script" rel="preload" href="/f9d3028dbef90a6e9b8db85387d63dd9f4edf538-97a8d3c35e8d1fa14a1b.js"/><link as="script" rel="preload" href="/component---src-templates-blog-template-js-ef83b594aa693e649d30.js"/><link as="fetch" rel="preload" href="/page-data/백엔드 반상회 회고/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/1073350324.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/1956554647.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/2938748437.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/app-data.json" crossorigin="anonymous"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div class="page-wrapper"><header class="page-header-wrapper"><div class="page-header"><div class="front-section"><a class="link" href="/">Hoo</a></div><div class="trailing-section"><a class="link" href="/about">about</a><a class="link" href="/posts">posts</a><div class="MuiAutocomplete-root MuiAutocomplete-hasPopupIcon css-1l6di18" role="combobox" aria-expanded="false"><div class="search-input-wrapper"><div class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root search-input css-feqhe6"><div class="MuiInput-root MuiInput-underline MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-adornedEnd MuiAutocomplete-inputRoot css-11tfndm"><input type="text" aria-invalid="false" autoComplete="off" value="" class="MuiInput-input MuiInputBase-input MuiInputBase-inputAdornedEnd MuiAutocomplete-input MuiAutocomplete-inputFocused css-mnn31" aria-autocomplete="list" autoCapitalize="none" spellcheck="false"/><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium search-icon css-vubbuv" focusable="false" viewBox="0 0 24 24" aria-hidden="true" data-testid="SearchOutlinedIcon"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path></svg></div></div></div></div></div></div></header><main class="page-content"><header class="post-header"><div class="emoji">🌿🤙🏻</div><div class="info"><div class="categories"><a class="category" href="/posts/글또">글또</a></div></div><h1 class="title">글또 백엔드 빌리지 반상회 준비위 회고</h1><div class="info"><div class="author">posted by <strong>Hoo</strong>,</div> <!-- -->May 22, 2023</div></header><div class="post-content"><div class="markdown"><p>처음 반상회 준비위 모집글을 봤을 땐, 이직 준비생이 어딜 한가하게 눈을 돌리나 하는 마음에 오랫동안 고민했다.
+스스로를 시선에 많이 가두는 시기였다.</p>
+<p>생각보다 명함을 많이 못돌렸지만, 그래도 심리적 거리감이 가깝다고 생각한 분들에게 드릴 수 있어서 만족한다.</p>
+<p>같이 컨셉 회의한 나영님, 동인님에게 이 글을 빌어 감사 인사를 전한다. 두 분 덕분에 회의도 준비도 잘 진행할 수 있었다.
+다른 사람이 들으면 미친거 아닌가 하는 헛소리를 두분이 잘 들어주신 덕분에 네트워킹 시간이 한층 재밌어졌으리라 믿는다.</p>
+<p>Backspace 라는 컨셉을 준비해주신 나영님 덕분에 빌리지 반상회가 전체적으로 탄탄해진 느낌을 받았다. 컨셉에 걸맞는 아이콘을 직접 제작해주시고.
+그에 맞는</p>
+<p>뒤풀이까지 깔끔했다. 이번 반상회 컨셉은 깔끔인가? 재휘의 깔끔한 mc 진행부터 마무리 뒤풀이까지 뭐 하나 아쉬운 점이 없었다.</p>
+<p>사실 행상 당일까지만 해도, 어 이대로 행사 진행해도 되는건가? 뭔가 너무 느슨한데 라는 불안감이 살짝 있었지만,,, 그건 내가 준비를 안해서였지, 나를 제외한 많은 준비위 분들은 열심히 수고를 해주셨다.
+생각해보면 재휘가 만든 페이지만 해도 주말을 갈아넣어 만들었을 텐데, 그 수고의 깊이를 제대로 보지 못했던 것 같다. 나영님과 동인님도 스티커 제작부터 입간판 주문까지 많은 일을 선뜻 나서서 해주셨기에 행사가 잘 진행됐다고 생각한다.</p>
+<p>사람 만나는 일이 진심으로 즐거웠다. 개발자가 되기 전 외향적인 성격 덕분인지 학교의 굵직한 행사에 운영직을 다수 경험하며 학창 시절을 보냈다.</p>
+<p>어떤 행사의 참여자 일 때와 주최/운영자일 때 태도가 굉장히 달라지는데, 후자일 때 오히려 행사를 더 재밌게 즐기는 것 같다. 일하느라 정신은 없지만 그래도 온전히 행사에 빠져드는 기분을 느낄 수 있어 좋았다.</p>
+<p>이번 반상회에서 굳이 한 일을 꼽으라면 자리 배치를 맡았는데, 이전까지 열심히 조찬모임과 커피챗을 경험한 덕분에 한번씩 얼굴을 익힌 분들이 많았다.
+자리 배치를 모두 마치고 각 테이블 마다 명단을 다시 읽는데, 테이블 마다 적어도 한명씩은 아는 분들이 계셔서 내심 반가웠다. 준비위 하길 잘했다고 느낀 순간이었다.</p>
+<p>물론 행사가 진행될 땐 어리버리한 모습을 보이기도 했다. 참가자 분들이 점차 행사장에 들어오는데, 아직 좌석 배치 슬랙을 올리지 않았던 것이다. 성윤님의 도움으로 슬랙에 노티할 수 있었는데, 이 때 조금 얼탔던 것 같다.</p>
+<p>초반엔 참석자 분들 좌석 안내를 지원하느라 도기님의 강연을 제대로 못들은 점이 아쉬웠다. SQS 는 내심 궁금한 주제였는데 흑흑..
+그래도 다행히 은찬님과 상오님의 발표는 빠짐없이 들을 수 있었다. 은찬님 열심히 사는 분인줄은 알았지만 그 정도로 빠이팅 넘치는 분인줄은 이번 발표로 또 새롭게 알게 됐다.
+최근 이직을 하면서 새로운 팀에 테스트 코드 문화가 없는게 내심 아쉬웠는데, 상오님 발표를 들으면서 테스트 코드를 어떻게 팀에 정착시킬지 고민하는 과정을 엿볼 수 있었다.
+단번에 뿅하고 이룬게 아닌, 일년 가까이 되는 시간의 시행착오를 겪으며 해낸 성과라 하니 본받고 싶었다. 상오님은 테스트 컨테이너를 도입하면서 얻은게 이력서 한줄 이라고 조크를 날렸지만, 그 시간을 감내하며 얻은 꺾이지 않는 마인드는 이력서 한 줄 보다 몇배는 무거운 가치를 지닐 것이라 믿는다.</p>
+<p>그래서 나는 ? 나영님과 우스갯 소리로 다음 기수엔 발표자 해봐야 하지 않겠냐고 낄낄 웃었는데, 은찬님과 상오님의 발표를 듣고 나니 진지하게 나도 발표가 해보고 싶어졌다.! 근데 주제가 없네 ㅎ..</p>
+<p>CS 스터디원들 모이는데 왜그렇게 반가웠는지 모르겠다 ㅋ.ㅋ 기본적으로 다들 외향적이라 그런가, 많이 본 사이는 아니지만 그래도 그들 덕분에 마음이 조금 놓였다.</p>
+<p>예전에는 글또라는 커뮤니티가 막연히 더 커지면 좋겠다고 생각했는데, 이번 행사가 마무리 되고선 충분하다고 느꼈다. 커뮤니티의 가치는 크기나 인원수 보다, 참여하는 사람들의 마음에서 나온다고 느끼게 됐다.
+반상회 참여 후기를 하나하나 읽는데, 글에서 뚝뚝 묻어나는 그날의 즐거움이, 준비위원회 분들의 마음을 한층 더 따뜻하게 만들었으리라 믿는다. 글또 시작할 때 커뮤니티에 선영향을 주고 싶은 사람이 되고 싶다는 다짐을 이렇게나마, 미약하지만 지킬 수 있게 됐다.
+기회가 닿으면 다음엔 발표자로도 다시한번 좋은 영향을 줄 수 있는 구성원이 되고 싶다. 모쪼록 사람은 사람에게 영향을 주는 존재이니 말이다.</p>
+<p>나는 요즘 내가 무엇을 좋아하는지 찾는 행위에 집중한다.
+달리기랑은 뜨겁게 연애중이고, 어떤 아이돌의 팬이 되기도 했다. 이 나이먹고 아이돌 팬 실화냐? 라며 현타 올 때도 있지만, 그래도 내가 무언갈 좋아한다고 자신있게 드러낼 수 있는 순간의 감정이 꽤나 마음에 들었다.
+이번 반상회로 또 알게 된 건, 나는 역시 사람 만나는 일을 좋아한다. 행사장에 한 분 두 분 등장할 때 괜히 신이 났고, 간만에 만난 지인분들과 “오랜만이네요~ 별일 없으셨죠?” 인사를 건네는 순간이 너무 기뻤다.
+내가 좋아하는 일을 찾을 수 있었던 건 역시 행동했기 때문 아닐까. 반상회 준비위원회 하면 너무 나대는것 같아보이지 않을까 하며 수십번 고민했지만, 고민하는 순간에도 사실 알고 있었다. 결국은 하게 되리라는걸.
+좋아하는 일을 적극적으로 하면서 살자고 마음 먹었다. 이번 반상회가 누군가에겐 동기부여를 얻고, 누군가에겐 네트워킹을 통한 삶의 범위를 넓혀가는 기회가 됐을 것이고, 나에겐 내가 좋아하는 일이 무엇인지 다시금 생각할 수 있는 기회를 줬다.</p>
+<p>하지만! 중요한 것은 역시 함께 한 사람들의 존재 아닐까. 사람 만나는 일을 좋아한다고 느낄 수 있었던 건, 결국 함께 준비해준 많은 분들이 좋은 분들이었기 때문이라 생각한다.
+내가 좋아하는 걸 더 좋아할 수 있도록 곁을 지켜준 많은 분들께 다시 한번 감사의 인사를 전합니다! 땡큐!</p></div></div><div class="post-navigator"><div class="post-navigator-card-wrapper"><a class="post-card prev" href="/Oauth2/"><div class="direction">이전 글</div><div class="title">about OAuth2.0</div></a></div><div class="post-navigator-card-wrapper"></div></div></main><footer class="page-footer-wrapper"><p class="page-footer">© <!-- -->2023<!-- --> <a href="https://github.com/hugehoo">임성후</a> powered by<a href="https://github.com/zoomKoding/zoomkoding-gatsby-blog"> zoomkoding-gatsby-blog</a></p></footer><div class="dark-mode-button-wrapper"><button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium dark-mode-button css-1yxmbwk" tabindex="0" type="button"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeLarge dark-mode-icon css-6flbmm" focusable="false" viewBox="0 0 24 24" aria-hidden="true" data-testid="DarkModeIcon"><path d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9 9-4.03 9-9c0-.46-.04-.92-.1-1.36-.98 1.37-2.58 2.26-4.4 2.26-2.98 0-5.4-2.42-5.4-5.4 0-1.81.89-3.42 2.26-4.4-.44-.06-.9-.1-1.36-.1z"></path></svg></button></div></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/백엔드 반상회 회고/";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-cd840d73727c2e366b63.js"],"app":["/app-3050603e25773489362d.js"],"component---cache-caches-gatsby-plugin-offline-app-shell-js":["/component---cache-caches-gatsby-plugin-offline-app-shell-js-3c26d4b7e3608ed0ece4.js"],"component---src-pages-404-js":["/component---src-pages-404-js-4917da7ef5b541e98a81.js"],"component---src-pages-about-js":["/component---src-pages-about-js-b5804eba3d16afcb3700.js"],"component---src-pages-index-js":["/component---src-pages-index-js-bc882cd03f70c89c8148.js"],"component---src-templates-blog-template-js":["/component---src-templates-blog-template-js-ef83b594aa693e649d30.js"],"component---src-templates-category-template-js":["/component---src-templates-category-template-js-fea460fedd50cffb10cd.js"]};/*]]>*/</script><script src="/polyfill-cd840d73727c2e366b63.js" nomodule=""></script><script src="/component---src-templates-blog-template-js-ef83b594aa693e649d30.js" async=""></script><script src="/f9d3028dbef90a6e9b8db85387d63dd9f4edf538-97a8d3c35e8d1fa14a1b.js" async=""></script><script src="/app-3050603e25773489362d.js" async=""></script><script src="/framework-0e1bf37de02f7cef2174.js" async=""></script><script src="/webpack-runtime-02f59eb8e2b9c93c6a8d.js" async=""></script></body></html>

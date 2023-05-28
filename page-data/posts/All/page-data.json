@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-templates-category-template-js",
     "path": "/posts/All",
-    "result": {"pageContext":{"currentCategory":"All","categories":["All","Tidify","OpenAi","글또","Oauth2","Architecture","springboot","Spring"],"edges":[]}},
+    "result": {"pageContext":{"currentCategory":"All","categories":["All","Tidify","OpenAi","Oauth2","Architecture","springboot","글또","Spring"],"edges":[]}},
     "staticQueryHashes": ["1073350324","1956554647","2938748437"]}

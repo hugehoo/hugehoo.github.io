@@ -1,6 +1,6 @@
 ---
 emoji: 🌿🤙🏻
-title: OpenAI 로 서비스 사용성 개선하기
+title: OpenAI로 서비스 사용성 개선하기
 date: '2023-05-28 00:00:00'
 author: Hoo
 tags: 블로그 github-pages gatsby
@@ -15,24 +15,24 @@ categories: Tidify OpenAi
 사용자 편의성을 위해 링크 입력 후 북마크의 이름을 지정하지 않으면, url(링크)을 북마크의 이름으로 자동 저장합니다.
 하지만 편의성을 위한 이 기능이 어느날 에러를 내버리는데...
 
-(** 아직 베타버전이라 본격적인 홍보는 하지 않았지만 [🔗앱스토어](https://apps.apple.com/kr/app/tidify/id6449292500) 에서 다운받을 수 있습니다)
+(아직 베타버전이라 본격적인 홍보는 하지 않았지만 [🔗앱스토어](https://apps.apple.com/kr/app/tidify/id6449292500) 에서 다운받을 수 있습니다)
+
+![img_13.png](img_13.png)
 
 <br>
 
-## 문제
+## OpenAI 도입 배경
 
 특정 링크(url)의 길이가 300자를 넘을 경우 DB table 의 `name` column 에서 Too long for column 에러가 발생합니다.
 당시에는 단순히 컬럼의 최대 길이를 500자로 늘려 대처했지만, 근본적인 대처 방법은 아니라 생각했습니다.
 특정 케이스만을 위해 name column 을 500자로 늘리는 건 오바라 생각했거든요.
+
 
 ```
 com.mysql.cj.jdbc.exceptions.MysqlDataTruncation:
 Data truncation: Data too long for column 'name' at row 1
 ```
 
-<br>
-
-## OpenAI 도입 배경
 
 DB 에서 Table column 설정을 바꾸기 보단, 링크의 적절한 name 을 생성할 수 있는 방법을 구상했습니다.
 
@@ -48,14 +48,13 @@ before : `https://docs.google.com/presentation/d/1XnBMiHbgZmclXT4dLfI6Q7fnNnXQwf
 > after : `https://docs.google.com/presen`
 
 이렇게 짤려버릴지도 모르는 일이니까요. 앱 UI 상엔 이렇게 저장되겠죠.
-<p align="center">
-  <img src="./img_5.png" />
-</p>
+
+![img_14.png](img_14.png)
 
 <br/>
 색다른 접근이 필요했습니다. 북마크 이름 입력을 강제하는 방법은 사용하고 싶지 않았습니다. 그런 식으로 해결하면 우선 저부터 앱을 사용하지 않을 것 같으니까요.
 
-url 을 대표할 수 있는 북마크 이름을 자동으로 생성하는 것이 문제의 관건인데, 이 때 떠오르는 그 이름.
+url 을 대표할 수 있는 북마크 이름을 자동으로 생성하는 것이 문제의 관건인데, 이 때 떠오르는 **`그 이름`**
 
 그렇습니다. 그분이 등장할 때 입니다.
 
@@ -327,11 +326,11 @@ if __name__ == "__main__":
 
 <br>
 <br>
+<br>
 
-## 결론
+## 마무리
 
-
-그전에 잠시 As-Is 와 To-Be 를 확인하고 가실께요~
+As-Is 와 To-Be 를 비교하며 마무리 짓겠습니다.
 
 ## As-Is
 
@@ -345,8 +344,21 @@ if __name__ == "__main__":
 OpenAI 를 활용해 이름을 세팅하는 경우입니다.
 
 url 입력 후 북마크 이름을 따로 지정하지 않을 경우, OpenAI 에서 응답받은 `추천 이름` 을 앱에 리턴합니다.
+프롬프트에서 결과를 single line 으로 지정하여 name 이 길어지는 문제도 해결할 수 있습니다.
+추가적으로 `ask_openai()` 메서드 return 부분에서 **`split('\n')`** 후처리도 했기 때문에 `Data too long for column 'name' at row 1` 같은 문제는 미연에 방지할 수 있게 됐습니다.
 
 ![img_4.png](img_4.png)
+
+<br>
+<br>
+<br>
+
+이렇게 제가 운영중인 서비스에 `OpenAI API` 를 적용해보았습니다.
+사용자 편의성을 위해 적용한 기능이 되려 장애를 일으킨 케이스였지만, 이를 AI 기술을 활용해 해결한 경험이었습니다.
+
+ **`Tidify Ver.2`** 부턴 URL 을 기반으로 적합한 북마크 이름을 지정할 수 있습니다.
+
+그럼 전 Version.2 준비하러 20000
 
 
 <br>

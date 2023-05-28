@@ -14,7 +14,7 @@ module.exports = {
     name: `임성후`,
     bio: {
       role: `개발자`,
-      description: ["좋은 코드를 만드는"],
+      description: ["P와J 사이의", "Python 과 Jvm을 사랑하는"],
       thumbnail: "sample.png" // Path to the image in the 'asset' folder
     },
     social: {
@@ -81,13 +81,13 @@ module.exports = {
         title: "Tidify",
         date: "2023.02 ~ ",
         description:
-          "iOS 공유하기 버튼 (Share extension) 기반, 개인용 북마크 아카이빙 서비스의 서버 개발을 전담했습니다.",
-        techStack: ["Springboot", "Java", "Mysql", "Jpa"],
-        thumbnailUrl: "tidify.png",
+          "iOS 공유하기 버튼 (Share extension) 기반, 북마크 아카이빙 서비스의 서버 개발을 전담했습니다.",
+        techStack: ["Java", "Springboot", "Mysql", "Jpa", "QDSL", "Docker", "Grafana", "OAuth2"],
+        thumbnailUrl: "tdf.png",
         links: {
           // post: '/gatsby-starter-zoomkoding-introduction',
           github: "https://github.com/hugehoo/tidify-be",
-          demo: "https://friendly-shannon-fbae91.netlify.app/"
+          appStore: "https://apps.apple.com/kr/app/tidify/id6449292500"
         }
       },
       {

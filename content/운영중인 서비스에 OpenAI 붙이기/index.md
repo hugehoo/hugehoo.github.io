@@ -13,7 +13,7 @@ categories: Tidify OpenAi
 
 **`Tidify`** 는 링크 아카이빙 서비스로, 링크를 복사하거나 Share Extension 을 사용하여 북마크를 자동으로 생성해주는 서비스입니다.
 사용자 편의성을 위해 링크 입력 후 북마크의 이름을 지정하지 않으면, url(링크)을 북마크의 이름으로 자동 저장합니다.
-하지만 편의성을 위한 이 기능이 어느날 에러를 내버리는데...
+하지만 편의성을 위한 이 기능이 어느날 `에러를 내버리는데`...
 
 (아직 베타버전이라 본격적인 홍보는 하지 않았지만 [🔗앱스토어](https://apps.apple.com/kr/app/tidify/id6449292500) 에서 다운받을 수 있습니다)
 
@@ -28,11 +28,12 @@ categories: Tidify OpenAi
 특정 케이스만을 위해 name column 을 500자로 늘리는 건 오바라 생각했거든요.
 
 
-```
+``` bash
 com.mysql.cj.jdbc.exceptions.MysqlDataTruncation:
 Data truncation: Data too long for column 'name' at row 1
 ```
 
+<br>
 
 DB 에서 Table column 설정을 바꾸기 보단, 링크의 적절한 name 을 생성할 수 있는 방법을 구상했습니다.
 
@@ -43,22 +44,26 @@ url 을 파싱하여 1) 도메인만 저장하거나 2) 전체 url 대신, 특�
 2. 특정 길이까지 slicing 하는 방법은, 사용자에게 좋지 않은 UI 라는 디자이너의 피드백이 있었습니다.
    가령 아래처럼 길이가 긴 url 을 특정 길이까지 slicing 하여 저장하면 어중간한 이름이 생성되버립니다.
 
->
-before : `https://docs.google.com/presentation/d/1XnBMiHbgZmclXT4dLfI6Q7fnNnXQwfo165458o3Qzv4/mobilepresent?slide=id.p` <br/>
-> after : `https://docs.google.com/presen`
+``` bash
+Before : https://docs.google.com/presentation/d/1XnBMiHbgZmclXT4dLfI6Q7fnNnXQwfo165458o3Qzv4/mobilepresent?slide=id.p <br/>
+After : https://docs.google.com/presen
+```
+
+<br>
 
 이렇게 짤려버릴지도 모르는 일이니까요. 앱 UI 상엔 이렇게 저장되겠죠.
 
 ![img_14.png](img_14.png)
 
 <br/>
+
 색다른 접근이 필요했습니다. 북마크 이름 입력을 강제하는 방법은 사용하고 싶지 않았습니다. 그런 식으로 해결하면 우선 저부터 앱을 사용하지 않을 것 같으니까요.
 
 url 을 대표할 수 있는 북마크 이름을 자동으로 생성하는 것이 문제의 관건인데, 이 때 떠오르는 **`그 이름`**
 
 그렇습니다. 그분이 등장할 때 입니다.
 
-`GPT` 를 사용한다면 url 만으로 그에 맞는 북마크 이름을 생성할 수 있으리라 생각했습니다.
+`GPT` 를 사용한다면 url 만으로 그에 맞는 북마크 이름을 자동으로 생성할 수 있으리라 생각했습니다.
 
 프롬프트에 `url 과 그에 맞는 이름`을 미리 예시로 주고, 새로운 url 을 입력하여 원하는 방식으로 이름이 생성되는지 테스트 했습니다.
 이 과정에선 뤼튼을 사용했습니다.
@@ -69,9 +74,9 @@ url 을 대표할 수 있는 북마크 이름을 자동으로 생성하는 것�
 위 같은 방법으로 프롬프트를 세팅할 수 있다면 충분히 url 의 이름을 자동으로 생성할 수 있을 것이라 생각했습니다.
 지체없이 코드를 짜보기로 했습니다.
 
+<br>
 
 ![img_6.png](img_6.png)
-
 
 <br>
 <br>
@@ -90,6 +95,8 @@ OpenAI API 를 사용하기로 결정했을 때 떠오른 옵션은 **`2가지`*
 
 현 단계에선 간단히 프롬프트를 세팅해, Url 에 맞는 북마크 이름을 추천 받기로 했습니다. (Pandas 는 다음 버전부터 적용하기로 ㅎ)
 
+<br>
+
 ## 개발
 
 개발 환경은 아래와 같습니다.
@@ -101,10 +108,14 @@ OpenAI API 를 사용하기로 결정했을 때 떠오른 옵션은 **`2가지`*
 - `pydantic` 1.10.8
 - `Pycharm`
 
+<br>
+
 FastAPI 를 사용하기로 했으니 우선 프로젝트를 생성합니다.
 Pycharm 으로 간단히 FastAPI 프로젝트를 생성 할 수 있습니다.
 
 ![img_1.png](img_1.png)
+
+<br>
 
 ### Main.py (Set up)
 
@@ -176,8 +187,6 @@ OpenAI Answer : 웹사이트: https://techblog.woowahan.com/12044
 
 <hr>
 
-<br>
-
 ## Version.2
 
 Version.1 보다 상세히 프롬프트를 작성했습니다.
@@ -233,6 +242,8 @@ generated name: Google Presentation 슬라이드
 Generate simple Korean name of this input URL: {prompt.question} \n
 """
 ```
+
+<br>
 
 ### 결과
 

@@ -81,7 +81,7 @@ module.exports = {
         title: "Tidify",
         date: "2023.02 ~ ",
         description:
-          "iOS 공유하기 버튼 (Share extension) 기반, 북마크 아카이빙 서비스의 서버 개발을 전담했습니다.",
+          "iOS 공유하기 버튼 (Share extension) 기반, 북마크 아카이빙 서비스의 서버 개발을 전담했습니다. 북마크 공유/구독 기능으로 개발해 타 서비스와 차별점을 갖습니다.",
         techStack: ["Java", "Springboot", "Mysql", "Jpa", "QDSL", "Docker", "Grafana", "OAuth2"],
         thumbnailUrl: "tdf.png",
         links: {
